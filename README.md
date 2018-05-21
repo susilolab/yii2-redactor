@@ -1,6 +1,7 @@
 yii2-redactor
 =============
 Extension redactor for Yii2 Framework.
+Add support to jQuery >= 3
 
 Installation
 ------------
