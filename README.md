@@ -10,12 +10,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist dimd4/yii2-redactor "*"
+php composer.phar require --prefer-dist susilolab/yii2-redactor "*"
 ```
 
  or
 ```
- "dimd4/yii2-redactor": "*"
+ "susilolab/yii2-redactor": "*"
 ```
 
 to the require section of your composer.json.
@@ -23,7 +23,7 @@ to the require section of your composer.json.
 Configure
 -----------------
 
-Add to config file (config/web.php or common\config\main.php) 
+Add to config file (config/web.php or common\config\main.php)
 
 ```
     'modules' => [
@@ -60,7 +60,7 @@ or not use ActiveField
     'model' => $model,
     'attribute' => 'body'
 ]) ?>
-```    
+```
 or config advanced redactor reference [Docs](http://imperavi.com/redactor/docs/)
 
 ```
@@ -79,7 +79,7 @@ change default subfolder - optional, name subfolder only [a-zA-Z]
 ```
 <?= $form->field($model, 'body')->widget(\yii\redactor\widgets\Redactor::className(), [
     'clientOptions' => [
-        'imageManagerJson' => ['/redactor/upload/image-json', 'subfolder' => 'news'], 
+        'imageManagerJson' => ['/redactor/upload/image-json', 'subfolder' => 'news'],
         'imageUpload' => ['/redactor/upload/image', 'subfolder' => 'news'],
         'fileUpload' => ['/redactor/upload/file', 'subfolder' => 'news'],
         'lang' => 'zh_cn',
